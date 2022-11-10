@@ -5,8 +5,7 @@ import pickle
 import json
 
 app = FastAPI()
-class model_input(BaseModel):
-    id : int
+
 
 origins = ["*"]
 app.add_middleware(
@@ -17,6 +16,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+class model_input(BaseModel):
+    id : int
+    
 #load model
 loaded_model = pickle.load(open('quiz_recommend.sav','rb'))
 quiz_model = pickle.load(open('quizzes.sav','rb'))
