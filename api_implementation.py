@@ -1,7 +1,7 @@
 import json
 import requests
 
-url = 'http://127.0.0.1:8000/fresherbell_quiz_api'
+url = 'https://fresherbell-quiz-api.herokuapp.com/fresherbell_quiz_api'
 
 input_data_for_model = {
     'id': 2
