@@ -25,7 +25,7 @@ quiz_model = pickle.load(open('quizzes.sav','rb'))
 
 @app.get("/")
 def read_root():
-    return {"message": "Welcome from the API"}
+    return {"message": "Welcome to the FRESHERBELL QUIZ API"}
 
 @app.post('/fresherbell_quiz_api')
 def quiz_recommend(input_parameters : model_input):
